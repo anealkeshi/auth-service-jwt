@@ -1,4 +1,4 @@
-package com.anilkc.controller;
+package me.anilkc.controller;
 
 import java.security.Principal;
 import java.util.ArrayList;
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.anilkc.domain.Role;
-import com.anilkc.domain.User;
-import com.anilkc.service.CustomUserDetailsService;
+import me.anilkc.domain.Role;
+import me.anilkc.domain.User;
+import me.anilkc.service.CustomUserDetailsService;
 
 @RestController
 @RequestMapping("/secure")

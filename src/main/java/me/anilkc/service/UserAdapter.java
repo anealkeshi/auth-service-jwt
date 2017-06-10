@@ -1,4 +1,4 @@
-package com.anilkc.service;
+package me.anilkc.service;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -7,8 +7,8 @@ import java.util.Set;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.anilkc.domain.Role;
-import com.anilkc.domain.User;
+import me.anilkc.domain.Role;
+import me.anilkc.domain.User;
 
 public class UserAdapter implements UserDetails {
 

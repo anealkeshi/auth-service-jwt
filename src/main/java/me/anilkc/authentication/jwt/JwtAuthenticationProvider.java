@@ -1,4 +1,4 @@
-package com.anilkc.authentication.jwt;
+package me.anilkc.authentication.jwt;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationProvider;

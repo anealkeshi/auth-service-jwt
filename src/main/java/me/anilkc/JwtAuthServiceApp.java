@@ -1,4 +1,4 @@
-package com.anilkc;
+package me.anilkc;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

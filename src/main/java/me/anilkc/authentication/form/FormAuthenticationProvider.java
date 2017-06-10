@@ -1,4 +1,4 @@
-package com.anilkc.authentication.form;
+package me.anilkc.authentication.form;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;
@@ -9,7 +9,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
-import com.anilkc.service.CustomUserDetailsService;
+import me.anilkc.service.CustomUserDetailsService;
 
 @Component
 public class FormAuthenticationProvider implements AuthenticationProvider {

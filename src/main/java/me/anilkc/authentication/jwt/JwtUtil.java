@@ -1,4 +1,4 @@
-package com.anilkc.authentication.jwt;
+package me.anilkc.authentication.jwt;
 
 import java.util.Arrays;
 import java.util.Date;
@@ -9,13 +9,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.anilkc.domain.Role;
-import com.anilkc.service.UserAdapter;
-
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import me.anilkc.domain.Role;
+import me.anilkc.service.UserAdapter;
 
 public class JwtUtil {
 
@@ -35,7 +34,7 @@ public class JwtUtil {
                                                 .map(Role::new)
                                                 .collect(Collectors.toList());
     // @formatter:on
-    com.anilkc.domain.User user = new com.anilkc.domain.User();
+    me.anilkc.domain.User user = new me.anilkc.domain.User();
     user.setUsername(claims.getSubject());
     user.setRoles(authorities);
     return new UserAdapter(user);

@@ -1,4 +1,4 @@
-package com.anilkc.domain;
+package me.anilkc.domain;
 
 import java.io.Serializable;
 import java.util.ArrayList;

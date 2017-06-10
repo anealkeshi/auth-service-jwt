@@ -1,4 +1,4 @@
-package com.anilkc.authentication.form;
+package me.anilkc.authentication.form;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -23,9 +23,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;
 import org.springframework.security.web.util.matcher.RequestMatcher;
 
-import com.anilkc.authentication.jwt.JwtUtil;
-import com.anilkc.authentication.jwt.TokenTO;
-import com.anilkc.service.CustomUserDetailsService;
+import me.anilkc.authentication.jwt.JwtUtil;
+import me.anilkc.authentication.jwt.TokenTO;
+import me.anilkc.service.CustomUserDetailsService;
 
 public class CustomFormAuthenticationFilter extends AbstractAuthenticationProcessingFilter {
 

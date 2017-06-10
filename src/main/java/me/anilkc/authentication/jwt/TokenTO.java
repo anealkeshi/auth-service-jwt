@@ -1,4 +1,4 @@
-package com.anilkc.authentication.jwt;
+package me.anilkc.authentication.jwt;
 
 import java.util.Date;
 import java.util.Map;

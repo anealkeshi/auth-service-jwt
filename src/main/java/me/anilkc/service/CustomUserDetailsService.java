@@ -1,4 +1,4 @@
-package com.anilkc.service;
+package me.anilkc.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,8 +6,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.anilkc.domain.User;
-import com.anilkc.repository.UserRepository;
+import me.anilkc.domain.User;
+import me.anilkc.repository.UserRepository;
 
 @Service("customUserDetailsService")
 public class CustomUserDetailsService implements UserDetailsService {
