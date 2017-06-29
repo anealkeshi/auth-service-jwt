@@ -14,6 +14,7 @@ import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import me.anilkc.domain.Role;
+import me.anilkc.domain.User;
 import me.anilkc.service.UserAdapter;
 
 public class JwtUtil {
@@ -34,7 +35,7 @@ public class JwtUtil {
                                                 .map(Role::new)
                                                 .collect(Collectors.toList());
     // @formatter:on
-    me.anilkc.domain.User user = new me.anilkc.domain.User();
+    User user = new User();
     user.setUsername(claims.getSubject());
     user.setRoles(authorities);
     return new UserAdapter(user);

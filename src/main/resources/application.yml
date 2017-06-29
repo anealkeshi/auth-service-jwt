@@ -18,11 +18,20 @@ spring:
     hibernate:
       ddl-auto: create
     
+#logging:
+#  level:
+#     org:
+#       springframework:
+#         security: DEBUG
+
 logging:
   level:
      org:
        springframework:
-         security: DEBUG
+         security:
+          web:
+            FilterChainProxy: DEBUG
+
 jwt:
   secret:
     key: secret

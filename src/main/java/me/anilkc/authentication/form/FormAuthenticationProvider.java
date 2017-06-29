@@ -33,5 +33,4 @@ public class FormAuthenticationProvider implements AuthenticationProvider {
   public boolean supports(Class<?> authentication) {
     return UsernamePasswordAuthenticationToken.class.isAssignableFrom(authentication);
   }
-
 }

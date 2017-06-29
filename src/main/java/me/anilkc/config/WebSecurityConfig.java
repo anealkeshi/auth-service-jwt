@@ -116,9 +116,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
            .and()
              .addFilterBefore(getCustomAuthenticationFilter("/auth/login"), UsernamePasswordAuthenticationFilter.class)
              .addFilterBefore(getJwtAuthenticationFilter("/secure/**"), UsernamePasswordAuthenticationFilter.class)
-            .anonymous()
+           .anonymous()
               .disable();
   // @formatter:on
   }
-
 }

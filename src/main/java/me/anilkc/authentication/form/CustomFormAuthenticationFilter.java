@@ -40,10 +40,6 @@ public class CustomFormAuthenticationFilter extends AbstractAuthenticationProces
     this.jwtSecretKey = secretKey;
   }
 
-  public boolean supports(Class<?> arg0) {
-    return true;
-  }
-
   @Override
   public Authentication attemptAuthentication(HttpServletRequest request, HttpServletResponse response)
       throws AuthenticationException, IOException, ServletException {
@@ -87,7 +83,6 @@ public class CustomFormAuthenticationFilter extends AbstractAuthenticationProces
     tokenTO.setExpirationDate(expirationDate);
     tokenTO.setRoles(getUserRoles(user));
     tokenTO.setHeaderClaims(headerClaims);
-    // tokenTO.setClientStorage(clientStorage);
     
     return tokenTO;
   }
